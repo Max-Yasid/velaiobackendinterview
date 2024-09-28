@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc && node --env-file=.env --watch ./dist/index.js --watch"
+    "start:dev": "npx tsc && node --env-file=.env --watch ./dist/index.js --watch",
+    "start": "npx tsc && node  ./dist/index.js --watch"
   },
   "repository": {
     "type": "git",
