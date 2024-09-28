@@ -13,6 +13,6 @@ app.use(cors({ origin: true, credentials: true }));
 
 app.use("/", allRoutes);
 
-app.listen(process.env.port, () => {
-  console.log(`app listening on port ${process.env.port}`);
+app.listen(process.env.port || 4000, () => {
+  console.log(`app listening on port ${process.env.port || 4000}`);
 });
